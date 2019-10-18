@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friender!</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu: 100,400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-right navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="/">Friender</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav ">
+          <a class="nav-item nav-link active" href="/survey">Survey <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/api/friends">API Friends List</a>
+          <a class="nav-item nav-link" href="https://github.com/izzydavid/Friend_Finder">Repo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <div class="container bg-light mt-3">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="pt-2">Survey Questions</h1>
+          <hr>
+          <h3>Tell Us About Yourself</h3>
+
+          <div class=" mb-3">
+            <h5>Name (Required)</h5>
+            <input type="text" placeholder="John Doe" id="userName">
+          </div>
+
+          <div class=" mb-3">
+            <h5>Link to Photo Image (Required)</h5>
+            <input type="text" placeholder="Enter Image URL" id="userPhoto">
+          </div>
+
+
+          <div>
+            <h3>Question 1</h3>
+            <h5>You're happy with your life as it is right now</h5>
+            <select id="question1" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 2</h3>
+            <h5>You are a positive person</h5>
+            <select id="question2" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 3</h3>
+            <h5>You get satisfaction out of helping people</h5>
+            <select id="question3" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 4</h3>
+            <h5>You would consider yourself egotistical.</h5>
+            <select id="question4" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 5</h3>
+            <h5>You are spontaneous.</h5>
+            <select id="question5" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 6</h3>
+            <h5>You are a high energy person</h5>
+            <select id="question6" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 7</h3>
+            <h5>You make regrettable decisions often</h5>
+            <select id="question7" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 8</h3>
+            <h5>You often dwell on the past.</h5>
+            <select id="question8" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 9</h3>
+            <h5>You have a good relationship with your parents</h5>
+            <select id="question9" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h3>Question 10</h3>
+            <h5>You enjoy being around people.</h5>
+            <select id="question10" class="question">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+
+          <div class="text-center">
+            <button class="btn btn-primary btn-lg my-5" type="submit" id="submit">Meet your new
+              Friend! </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title ">Meet Your Friender Match!</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4 class=" text-center" id="match"></h4>
+            <img src="" alt="match Image" id="matchImage">
+          </div>
+          <div class="modal-footer">
+            <a href="/survey" class="btn btn-primary">Take the quiz again</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/javascript/index.js"> </script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"> </script>
+</html>
